@@ -1,0 +1,14 @@
+# Cadence / Simulation junk
+.simvision/
+INCA_libs/
+logs/
+work/
+
+# Temp files
+*.log
+*.vcd
+*~
+*.swp
+
+# Backup files
+*.dd
