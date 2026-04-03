@@ -1,8 +1,8 @@
-\# 🚀 UART VLSI Design using Verilog
+**🚀 UART VLSI Design using Verilog**
 
 
 
-\## 📌 Overview
+**📌 Overview**
 
 
 
@@ -12,11 +12,7 @@ It includes transmitter, receiver, and baud rate generator modules, along with s
 
 
 
-\---
-
-
-
-\## 🧩 Design Architecture
+**🧩 Design Architecture**
 
 
 
@@ -24,47 +20,39 @@ The design consists of three main modules:
 
 
 
-\* \*\*Transmitter\*\* – Sends serial data using FSM
+**Transmitter** – Sends serial data using FSM
 
-\* \*\*Receiver\*\* – Receives data using 16x oversampling
+**Receiver** – Receives data using 16x oversampling
 
-\* \*\*Baud Rate Generator\*\* – Generates timing signals for UART communication
-
-
-
-\---
+**Baud Rate Generator** – Generates timing signals for UART communication
 
 
 
-\## ⚙️ Features
+**⚙️ Features**
 
 
 
-\* FSM-based UART transmitter and receiver
+\-FSM-based UART transmitter and receiver
 
-\* 16x oversampling for accurate reception
+\-16x oversampling for accurate reception
 
-\* Parameterized baud rate generation
+\-Parameterized baud rate generation
 
-\* Loopback testing implemented
+\-Loopback testing implemented
 
-\* Modular and scalable design
-
-
-
-\---
+\-Modular and scalable design
 
 
 
-\## 🧪 Simulation
+**🧪 Simulation**
 
 
 
-\* Tools Used: \*Icarus Verilog, Cadence NCSim\*
+\-Tools Used: **Icarus Verilog, Cadence NCSim**
 
-\* Verified correct data transmission and reception
+\-Verified correct data transmission and reception
 
-\* Example outputs:
+\-Example outputs:
 
 
 
@@ -74,69 +62,51 @@ The design consists of three main modules:
 
 
 
-\---
+**🏗️ Synthesis**
 
 
 
-\## 🏗️ Synthesis
+\-Tool Used: **Cadence RTL Compiler (Genus)**
+
+\-Generated gate-level netlist
+
+\-Performed timing, area, and power analysis
 
 
 
-\* Tool Used: \*Cadence RTL Compiler (Genus)\*
-
-\* Generated gate-level netlist
-
-\* Performed timing, area, and power analysis
+**📊 Results**
 
 
 
-\---
+\-Functional verification successful ✅
+
+\-Timing analysis performed
+
+\-Critical path identified in baud rate generator
+
+\-Timing optimization explored
 
 
 
-\## 📊 Results
+**🛠️ Tools \& Technologies**
 
 
 
-\* Functional verification successful ✅
+\-Verilog HDL
 
-\* Timing analysis performed
+\-Icarus Verilog
 
-\* Critical path identified in baud rate generator
+\-Cadence NCSim
 
-\* Timing optimization explored
+\-Cadence RTL Compiler
 
-
-
-\---
+\-Git \& GitHub
 
 
 
-\## 🛠️ Tools \& Technologies
+**📁 Project Structure**
 
 
-
-\* Verilog HDL
-
-\* Icarus Verilog
-
-\* Cadence NCSim
-
-\* Cadence RTL Compiler
-
-\* Git \& GitHub
-
-
-
-\---
-
-
-
-\## 📁 Project Structure
-
-
-
-```
 
 UART-VLSI-Design/
 
@@ -152,35 +122,25 @@ UART-VLSI-Design/
 
 ├── README.md
 
-```
+
+
+**🚀 Future Work**
 
 
 
-\---
+\-Complete physical design using Cadence Encounter
+
+\-Improve timing closure
+
+\-Optimize power consumption
 
 
 
-\## 🚀 Future Work
+**👨‍💻 Author**
 
 
 
-\* Complete physical design using Cadence Encounter
-
-\* Improve timing closure
-
-\* Optimize power consumption
-
-
-
-\---
-
-
-
-\## 👨‍💻 Author
-
-
-
-\*\*Shrivardhan Baviskar\*\*
+**Shrivardhan Baviskar**
 
 B.Tech (Electronics \& Telecommunication Engineering)
 
@@ -188,11 +148,7 @@ Vishwakarma Institute of Technology, Pune
 
 
 
-\---
-
-
-
-\## ⭐ Acknowledgment
+**⭐ Acknowledgment**
 
 
 
