@@ -1,0 +1,1117 @@
+VERSION 5.4 ;
+NAMESCASESENSITIVE ON ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/"  ;
+
+SITE TSM34SITE
+    SYMMETRY Y  ;
+    CLASS CORE  ;
+    SIZE 0.410 BY 2.870 ;
+END TSM34SITE
+
+MACRO LVLLHX2
+    CLASS CORE ;
+    FOREIGN LVLLHX2 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 7.380 BY 8.610 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  5.430 6.125 5.640 8.150 ;
+        RECT  5.350 6.125 5.430 6.625 ;
+        RECT  5.350 7.550 5.430 8.150 ;
+        END
+        AntennaDiffArea 0.5406 ;
+    END Y
+    PIN VDDI
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  5.040 1.700 7.290 1.990 ;
+        RECT  4.780 1.645 5.040 2.535 ;
+        RECT  4.370 1.645 4.780 1.990 ;
+        RECT  4.110 1.645 4.370 2.560 ;
+        RECT  2.600 1.645 4.110 1.990 ;
+        RECT  2.340 1.645 2.600 2.535 ;
+        RECT  0.090 1.700 2.340 1.990 ;
+        END
+        AntennaDiffArea 0.3855 ;
+    END VDDI
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.190 3.390 3.350 4.730 ;
+        RECT  3.090 3.390 3.190 3.650 ;
+        RECT  2.655 4.570 3.190 4.730 ;
+        RECT  2.150 4.570 2.655 5.110 ;
+        END
+        AntennaGateArea 0.2015 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  7.255 -0.130 7.380 0.130 ;
+        RECT  7.255 5.610 7.380 5.870 ;
+        RECT  6.995 -0.130 7.255 0.250 ;
+        RECT  6.995 5.490 7.255 5.990 ;
+        RECT  4.630 -0.130 6.995 0.130 ;
+        RECT  5.100 5.610 6.995 5.870 ;
+        RECT  5.695 0.725 5.965 1.465 ;
+        RECT  5.695 3.265 5.965 5.015 ;
+        RECT  4.630 0.725 5.695 0.985 ;
+        RECT  5.100 4.755 5.695 5.015 ;
+        RECT  4.840 4.755 5.100 6.595 ;
+        RECT  4.040 4.755 4.840 5.015 ;
+        RECT  3.695 5.610 4.840 5.870 ;
+        RECT  4.390 -0.130 4.630 0.985 ;
+        RECT  2.990 -0.130 4.390 0.130 ;
+        RECT  2.990 0.725 4.390 0.985 ;
+        RECT  3.435 5.610 3.695 6.265 ;
+        RECT  2.565 5.610 3.435 5.870 ;
+        RECT  2.750 -0.130 2.990 0.985 ;
+        RECT  0.385 -0.130 2.750 0.130 ;
+        RECT  1.685 0.725 2.750 0.985 ;
+        RECT  2.305 5.310 2.565 6.650 ;
+        RECT  1.945 5.610 2.305 5.870 ;
+        RECT  1.705 4.755 1.945 5.870 ;
+        RECT  1.685 4.755 1.705 5.015 ;
+        RECT  0.385 5.610 1.705 5.870 ;
+        RECT  1.415 0.725 1.685 1.465 ;
+        RECT  1.415 3.265 1.685 5.015 ;
+        RECT  0.125 -0.130 0.385 0.250 ;
+        RECT  0.125 5.490 0.385 5.990 ;
+        RECT  0.000 -0.130 0.125 0.130 ;
+        RECT  0.000 5.610 0.125 5.870 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  7.255 2.740 7.380 3.000 ;
+        RECT  7.255 8.480 7.380 8.740 ;
+        RECT  7.070 2.620 7.255 3.120 ;
+        RECT  6.995 8.360 7.255 8.740 ;
+        RECT  6.995 2.620 7.070 4.025 ;
+        RECT  6.830 2.740 6.995 4.025 ;
+        RECT  6.260 8.480 6.995 8.740 ;
+        RECT  0.550 2.740 6.830 3.000 ;
+        RECT  6.020 7.945 6.260 8.740 ;
+        RECT  5.015 8.480 6.020 8.740 ;
+        RECT  4.755 7.425 5.015 8.740 ;
+        RECT  4.530 8.480 4.755 8.740 ;
+        RECT  4.270 8.045 4.530 8.740 ;
+        RECT  2.875 8.480 4.270 8.740 ;
+        RECT  2.615 7.565 2.875 8.740 ;
+        RECT  1.360 8.480 2.615 8.740 ;
+        RECT  1.120 7.945 1.360 8.740 ;
+        RECT  0.385 8.480 1.120 8.740 ;
+        RECT  0.385 2.740 0.550 4.025 ;
+        RECT  0.310 2.620 0.385 4.025 ;
+        RECT  0.125 8.360 0.385 8.740 ;
+        RECT  0.125 2.620 0.310 3.120 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        RECT  0.000 8.480 0.125 8.740 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  5.045 6.895 5.185 7.155 ;
+        RECT  4.925 6.890 5.045 7.155 ;
+        RECT  4.780 3.205 5.040 4.095 ;
+        RECT  4.405 6.890 4.925 7.150 ;
+        RECT  4.150 3.835 4.780 4.095 ;
+        RECT  4.245 6.515 4.405 7.615 ;
+        RECT  4.235 6.515 4.245 6.675 ;
+        RECT  4.005 7.355 4.245 7.615 ;
+        RECT  3.975 6.415 4.235 6.675 ;
+        RECT  4.000 3.840 4.150 4.095 ;
+        RECT  3.695 6.855 4.065 7.115 ;
+        RECT  3.690 3.190 3.820 3.450 ;
+        RECT  3.435 6.490 3.695 7.815 ;
+        RECT  3.530 3.190 3.690 5.430 ;
+        RECT  2.875 5.270 3.530 5.430 ;
+        RECT  3.185 6.490 3.435 6.650 ;
+        RECT  2.925 6.050 3.185 6.650 ;
+        RECT  2.600 3.840 2.995 4.095 ;
+        RECT  1.975 7.125 2.995 7.385 ;
+        RECT  2.340 3.205 2.600 4.095 ;
+        RECT  1.815 6.280 1.975 8.105 ;
+    END
+END LVLLHX2
+
+MACRO LVLLHX8
+    CLASS CORE ;
+    FOREIGN LVLLHX8 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 8.610 BY 8.610 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  7.715 6.120 7.975 6.750 ;
+        RECT  7.685 7.450 7.945 8.150 ;
+        RECT  7.685 6.540 7.715 6.750 ;
+        RECT  7.475 6.540 7.685 7.660 ;
+        RECT  6.955 6.540 7.475 6.750 ;
+        RECT  6.955 7.450 7.475 7.660 ;
+        RECT  6.695 6.120 6.955 6.750 ;
+        RECT  6.695 7.450 6.955 8.150 ;
+        END
+        AntennaDiffArea 1.3524 ;
+    END Y
+    PIN VDDI
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  6.285 1.700 8.530 1.990 ;
+        RECT  6.025 1.645 6.285 2.535 ;
+        RECT  5.615 1.645 6.025 1.990 ;
+        RECT  5.355 1.640 5.615 2.540 ;
+        RECT  4.535 1.645 5.355 1.990 ;
+        RECT  4.275 1.640 4.535 2.540 ;
+        RECT  2.585 1.645 4.275 1.990 ;
+        RECT  2.325 1.645 2.585 2.535 ;
+        RECT  0.080 1.700 2.325 1.990 ;
+        END
+        AntennaDiffArea 0.8057 ;
+    END VDDI
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.395 3.395 3.555 5.005 ;
+        RECT  3.375 3.395 3.395 3.655 ;
+        RECT  2.850 4.610 3.395 5.005 ;
+        END
+        AntennaGateArea 0.7917 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  8.485 -0.130 8.610 0.130 ;
+        RECT  8.485 5.610 8.610 5.870 ;
+        RECT  8.225 -0.130 8.485 0.250 ;
+        RECT  8.225 5.490 8.485 5.990 ;
+        RECT  6.150 -0.130 8.225 0.130 ;
+        RECT  7.465 5.610 8.225 5.870 ;
+        RECT  7.210 5.610 7.465 6.350 ;
+        RECT  6.940 0.725 7.210 1.465 ;
+        RECT  7.205 3.265 7.210 6.350 ;
+        RECT  6.950 3.265 7.205 5.870 ;
+        RECT  6.940 3.265 6.950 5.015 ;
+        RECT  6.445 5.610 6.950 5.870 ;
+        RECT  6.150 0.725 6.940 0.985 ;
+        RECT  6.015 4.755 6.940 5.015 ;
+        RECT  6.185 5.610 6.445 6.590 ;
+        RECT  6.015 5.610 6.185 5.870 ;
+        RECT  5.910 -0.130 6.150 0.985 ;
+        RECT  5.430 4.755 6.015 5.870 ;
+        RECT  2.700 -0.130 5.910 0.130 ;
+        RECT  2.700 0.725 5.910 0.985 ;
+        RECT  5.415 4.755 5.430 6.765 ;
+        RECT  5.140 5.610 5.415 6.765 ;
+        RECT  3.875 5.610 5.140 5.870 ;
+        RECT  3.615 5.610 3.875 6.210 ;
+        RECT  2.790 5.610 3.615 5.870 ;
+        RECT  2.530 5.610 2.790 6.205 ;
+        RECT  2.460 -0.130 2.700 0.985 ;
+        RECT  1.770 5.610 2.530 5.870 ;
+        RECT  0.385 -0.130 2.460 0.130 ;
+        RECT  1.670 0.725 2.460 0.985 ;
+        RECT  1.660 5.610 1.770 6.570 ;
+        RECT  1.400 0.725 1.670 1.465 ;
+        RECT  1.510 3.265 1.660 6.570 ;
+        RECT  1.400 3.265 1.510 5.870 ;
+        RECT  0.385 5.610 1.400 5.870 ;
+        RECT  0.125 -0.130 0.385 0.250 ;
+        RECT  0.125 5.490 0.385 5.990 ;
+        RECT  0.000 -0.130 0.125 0.130 ;
+        RECT  0.000 5.610 0.125 5.870 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  8.485 2.740 8.610 3.000 ;
+        RECT  8.485 8.480 8.610 8.740 ;
+        RECT  8.315 2.620 8.485 3.120 ;
+        RECT  8.225 7.630 8.485 8.740 ;
+        RECT  8.225 2.620 8.315 4.025 ;
+        RECT  8.075 2.740 8.225 4.025 ;
+        RECT  6.445 8.480 8.225 8.740 ;
+        RECT  0.535 2.740 8.075 3.000 ;
+        RECT  6.185 7.525 6.445 8.740 ;
+        RECT  5.425 8.480 6.185 8.740 ;
+        RECT  5.165 7.480 5.425 8.740 ;
+        RECT  3.785 8.480 5.165 8.740 ;
+        RECT  3.545 7.550 3.785 8.740 ;
+        RECT  3.025 8.480 3.545 8.740 ;
+        RECT  2.785 7.550 3.025 8.740 ;
+        RECT  1.405 8.480 2.785 8.740 ;
+        RECT  1.145 7.610 1.405 8.740 ;
+        RECT  0.885 8.480 1.145 8.740 ;
+        RECT  0.645 7.945 0.885 8.740 ;
+        RECT  0.385 8.480 0.645 8.740 ;
+        RECT  0.385 2.740 0.535 4.025 ;
+        RECT  0.295 2.620 0.385 4.025 ;
+        RECT  0.125 8.360 0.385 8.740 ;
+        RECT  0.125 2.620 0.295 3.120 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        RECT  0.000 8.480 0.125 8.740 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  6.525 6.970 7.125 7.230 ;
+        RECT  5.935 7.015 6.525 7.175 ;
+        RECT  6.025 3.375 6.285 4.095 ;
+        RECT  4.165 3.835 6.025 4.095 ;
+        RECT  5.675 6.335 5.935 7.690 ;
+        RECT  4.895 6.965 5.255 7.225 ;
+        RECT  3.945 3.245 5.075 3.405 ;
+        RECT  4.735 6.165 4.895 8.025 ;
+        RECT  3.945 5.045 4.780 5.205 ;
+        RECT  4.215 6.165 4.735 6.325 ;
+        RECT  4.165 7.865 4.735 8.025 ;
+        RECT  4.395 6.505 4.555 7.685 ;
+        RECT  3.365 6.765 4.395 6.925 ;
+        RECT  4.055 6.165 4.215 6.585 ;
+        RECT  4.005 7.105 4.165 8.025 ;
+        RECT  3.300 6.425 4.055 6.585 ;
+        RECT  3.695 7.105 4.005 7.265 ;
+        RECT  3.785 3.195 3.945 5.390 ;
+        RECT  3.300 5.230 3.785 5.390 ;
+        RECT  3.205 6.765 3.365 8.300 ;
+        RECT  3.040 5.230 3.300 5.430 ;
+        RECT  3.040 6.085 3.300 6.585 ;
+        RECT  2.585 3.835 3.215 4.095 ;
+        RECT  2.280 5.230 3.040 5.390 ;
+        RECT  2.280 6.425 3.040 6.585 ;
+        RECT  2.325 3.205 2.585 4.095 ;
+        RECT  2.020 5.230 2.280 5.430 ;
+        RECT  2.185 6.085 2.280 6.585 ;
+        RECT  2.025 6.085 2.185 7.785 ;
+        RECT  2.020 6.085 2.025 6.585 ;
+        RECT  2.015 7.525 2.025 7.785 ;
+    END
+END LVLLHX8
+
+MACRO LVLHLX2
+    CLASS CORE ;
+    FOREIGN LVLHLX2 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 1.640 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.495 0.405 1.540 1.990 ;
+        RECT  1.380 0.405 1.495 2.395 ;
+        RECT  1.285 0.405 1.380 1.005 ;
+        RECT  1.235 1.700 1.380 2.395 ;
+        END
+        AntennaDiffArea 0.5236 ;
+    END Y
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.440 1.185 0.760 1.580 ;
+        END
+        AntennaGateArea 0.0871 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.955 -0.130 1.640 0.130 ;
+        RECT  0.695 -0.130 0.955 0.645 ;
+        RECT  0.355 -0.130 0.695 0.300 ;
+        RECT  0.000 -0.130 0.355 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.955 2.740 1.640 3.000 ;
+        RECT  0.695 1.880 0.955 3.000 ;
+        RECT  0.405 2.740 0.695 3.000 ;
+        RECT  0.145 2.570 0.405 3.000 ;
+        RECT  0.000 2.740 0.145 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  1.100 1.210 1.200 1.470 ;
+        RECT  0.940 0.845 1.100 1.470 ;
+        RECT  0.405 0.845 0.940 1.005 ;
+        RECT  0.260 0.745 0.405 1.005 ;
+        RECT  0.260 1.755 0.355 2.015 ;
+        RECT  0.100 0.745 0.260 2.015 ;
+    END
+END LVLHLX2
+
+MACRO LVLHLX8
+    CLASS CORE ;
+    FOREIGN LVLHLX8 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 3.280 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  2.445 0.670 2.785 1.110 ;
+        RECT  2.445 1.730 2.785 2.170 ;
+        RECT  2.380 0.770 2.445 1.110 ;
+        RECT  2.380 1.730 2.445 2.070 ;
+        RECT  1.930 0.770 2.380 2.070 ;
+        RECT  1.765 0.770 1.930 1.110 ;
+        RECT  1.760 1.730 1.930 2.070 ;
+        RECT  1.425 0.380 1.765 1.110 ;
+        RECT  1.420 1.730 1.760 2.400 ;
+        END
+        AntennaDiffArea 1.1312 ;
+    END Y
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.720 1.245 0.875 1.505 ;
+        RECT  0.275 1.245 0.720 1.580 ;
+        END
+        AntennaGateArea 0.3445 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.155 -0.130 3.280 0.130 ;
+        RECT  2.895 -0.130 3.155 0.300 ;
+        RECT  2.235 -0.130 2.895 0.130 ;
+        RECT  1.975 -0.130 2.235 0.565 ;
+        RECT  0.385 -0.130 1.975 0.130 ;
+        RECT  0.125 -0.130 0.385 0.300 ;
+        RECT  0.000 -0.130 0.125 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.155 2.740 3.280 3.000 ;
+        RECT  2.895 2.570 3.155 3.000 ;
+        RECT  2.235 2.740 2.895 3.000 ;
+        RECT  1.975 2.280 2.235 3.000 ;
+        RECT  0.385 2.740 1.975 3.000 ;
+        RECT  0.125 2.535 0.385 3.000 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  1.215 1.290 1.655 1.550 ;
+        RECT  1.055 0.905 1.215 1.930 ;
+        RECT  0.795 0.905 1.055 1.065 ;
+        RECT  0.795 1.770 1.055 1.930 ;
+        RECT  0.635 0.630 0.795 1.065 ;
+        RECT  0.535 1.770 0.795 2.140 ;
+        RECT  0.535 0.630 0.635 0.890 ;
+    END
+END LVLHLX8
+
+MACRO LVLLHEHX2
+    CLASS CORE ;
+    FOREIGN LVLLHEHX2 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 6.970 BY 8.610 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  5.430 6.125 5.640 8.150 ;
+        RECT  5.350 6.125 5.430 6.625 ;
+        RECT  5.350 7.550 5.430 8.150 ;
+        END
+        AntennaDiffArea 0.5406 ;
+    END Y
+    PIN VDDI
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.630 1.700 6.880 1.990 ;
+        RECT  4.370 1.645 4.630 2.535 ;
+        RECT  3.980 1.645 4.370 1.990 ;
+        RECT  3.720 1.645 3.980 2.560 ;
+        RECT  2.600 1.645 3.720 1.990 ;
+        RECT  2.340 1.645 2.600 2.535 ;
+        RECT  0.090 1.700 2.340 1.990 ;
+        END
+        AntennaDiffArea 0.3609 ;
+    END VDDI
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.040 6.865 4.250 7.125 ;
+        RECT  3.750 6.660 4.040 7.125 ;
+        RECT  3.650 6.865 3.750 7.125 ;
+        END
+        AntennaGateArea 0.2782 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  2.940 3.390 3.020 3.650 ;
+        RECT  2.780 3.390 2.940 5.090 ;
+        RECT  2.565 4.570 2.780 5.090 ;
+        RECT  1.920 4.830 2.565 5.090 ;
+        END
+        AntennaGateArea 0.1872 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  6.845 -0.130 6.970 0.130 ;
+        RECT  6.845 5.610 6.970 5.870 ;
+        RECT  6.585 -0.130 6.845 0.250 ;
+        RECT  6.585 5.490 6.845 5.990 ;
+        RECT  4.220 -0.130 6.585 0.130 ;
+        RECT  5.070 5.610 6.585 5.870 ;
+        RECT  5.285 0.725 5.555 1.465 ;
+        RECT  5.285 3.265 5.555 5.015 ;
+        RECT  4.220 0.725 5.285 0.985 ;
+        RECT  5.070 4.755 5.285 5.015 ;
+        RECT  4.810 4.755 5.070 5.980 ;
+        RECT  3.460 4.755 4.810 5.015 ;
+        RECT  1.810 5.610 4.810 5.870 ;
+        RECT  3.980 -0.130 4.220 0.985 ;
+        RECT  2.990 -0.130 3.980 0.130 ;
+        RECT  2.990 0.725 3.980 0.985 ;
+        RECT  2.750 -0.130 2.990 0.985 ;
+        RECT  0.385 -0.130 2.750 0.130 ;
+        RECT  1.685 0.725 2.750 0.985 ;
+        RECT  1.685 5.270 1.810 5.870 ;
+        RECT  1.415 0.725 1.685 1.465 ;
+        RECT  1.415 3.265 1.685 5.870 ;
+        RECT  0.385 5.610 1.415 5.870 ;
+        RECT  0.125 -0.130 0.385 0.250 ;
+        RECT  0.125 5.490 0.385 5.990 ;
+        RECT  0.000 -0.130 0.125 0.130 ;
+        RECT  0.000 5.610 0.125 5.870 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  6.845 2.740 6.970 3.000 ;
+        RECT  6.845 8.480 6.970 8.740 ;
+        RECT  6.660 2.620 6.845 3.120 ;
+        RECT  6.585 8.360 6.845 8.740 ;
+        RECT  6.585 2.620 6.660 4.025 ;
+        RECT  6.420 2.740 6.585 4.025 ;
+        RECT  6.260 8.480 6.585 8.740 ;
+        RECT  0.550 2.740 6.420 3.000 ;
+        RECT  6.020 7.945 6.260 8.740 ;
+        RECT  5.100 8.480 6.020 8.740 ;
+        RECT  4.840 8.045 5.100 8.740 ;
+        RECT  4.080 8.480 4.840 8.740 ;
+        RECT  3.820 8.045 4.080 8.740 ;
+        RECT  2.960 8.480 3.820 8.740 ;
+        RECT  2.735 7.415 2.960 8.740 ;
+        RECT  2.510 7.415 2.735 7.675 ;
+        RECT  1.310 8.480 2.735 8.740 ;
+        RECT  1.070 7.945 1.310 8.740 ;
+        RECT  0.385 8.480 1.070 8.740 ;
+        RECT  0.385 2.740 0.550 4.025 ;
+        RECT  0.310 2.620 0.385 4.025 ;
+        RECT  0.125 8.360 0.385 8.740 ;
+        RECT  0.125 2.620 0.310 3.120 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        RECT  0.000 8.480 0.125 8.740 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  5.105 6.895 5.220 7.155 ;
+        RECT  4.945 6.320 5.105 7.865 ;
+        RECT  4.020 6.320 4.945 6.480 ;
+        RECT  4.590 7.705 4.945 7.865 ;
+        RECT  4.500 7.265 4.760 7.525 ;
+        RECT  4.370 3.205 4.630 4.095 ;
+        RECT  4.330 7.705 4.590 8.205 ;
+        RECT  3.600 7.335 4.500 7.525 ;
+        RECT  3.740 3.835 4.370 4.095 ;
+        RECT  3.595 8.040 3.640 8.300 ;
+        RECT  3.595 7.335 3.600 7.675 ;
+        RECT  3.470 7.335 3.595 8.300 ;
+        RECT  3.435 6.465 3.470 8.300 ;
+        RECT  3.340 6.465 3.435 7.675 ;
+        RECT  3.140 8.040 3.435 8.300 ;
+        RECT  2.350 6.050 3.370 6.210 ;
+        RECT  3.280 3.190 3.360 4.165 ;
+        RECT  3.310 6.465 3.340 7.545 ;
+        RECT  2.600 6.465 3.310 6.625 ;
+        RECT  3.200 3.190 3.280 5.430 ;
+        RECT  3.120 4.005 3.200 5.430 ;
+        RECT  2.120 5.270 3.120 5.430 ;
+        RECT  2.340 3.205 2.600 4.095 ;
+        RECT  2.090 6.050 2.350 6.550 ;
+        RECT  2.100 7.235 2.330 7.495 ;
+        RECT  1.840 7.235 2.100 8.255 ;
+        RECT  1.580 6.125 1.840 7.495 ;
+    END
+END LVLLHEHX2
+
+MACRO LVLLHEHX8
+    CLASS CORE ;
+    FOREIGN LVLLHEHX8 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 9.020 BY 8.610 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  8.100 6.120 8.355 6.750 ;
+        RECT  8.100 7.450 8.355 8.150 ;
+        RECT  8.095 6.120 8.100 8.150 ;
+        RECT  7.890 6.540 8.095 7.660 ;
+        RECT  7.335 6.540 7.890 6.750 ;
+        RECT  7.335 7.450 7.890 7.660 ;
+        RECT  7.075 6.120 7.335 6.750 ;
+        RECT  7.075 7.450 7.335 8.150 ;
+        END
+        AntennaDiffArea 1.2084 ;
+    END Y
+    PIN VDDI
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  6.695 1.700 8.930 1.990 ;
+        RECT  6.435 1.645 6.695 2.535 ;
+        RECT  5.525 1.645 6.435 1.990 ;
+        RECT  5.265 1.645 5.525 2.560 ;
+        RECT  4.445 1.645 5.265 1.990 ;
+        RECT  4.185 1.645 4.445 2.560 ;
+        RECT  2.585 1.645 4.185 1.990 ;
+        RECT  2.325 1.645 2.585 2.535 ;
+        RECT  0.090 1.700 2.325 1.990 ;
+        END
+        AntennaDiffArea 0.7626 ;
+    END VDDI
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  5.390 6.660 6.010 7.095 ;
+        RECT  4.650 6.660 5.390 6.820 ;
+        RECT  4.390 6.660 4.650 6.955 ;
+        END
+        AntennaGateArea 1.0972 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.590 4.570 3.595 4.735 ;
+        RECT  3.485 4.160 3.590 4.735 ;
+        RECT  3.325 3.395 3.485 4.735 ;
+        RECT  0.980 4.570 3.325 4.735 ;
+        END
+        AntennaGateArea 0.741 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  8.895 -0.130 9.020 0.130 ;
+        RECT  8.895 5.610 9.020 5.870 ;
+        RECT  8.635 -0.130 8.895 0.250 ;
+        RECT  8.635 5.490 8.895 6.330 ;
+        RECT  6.560 -0.130 8.635 0.130 ;
+        RECT  7.845 5.610 8.635 5.870 ;
+        RECT  7.625 5.610 7.845 6.350 ;
+        RECT  7.585 3.180 7.625 6.350 ;
+        RECT  7.350 0.725 7.620 1.465 ;
+        RECT  7.355 3.180 7.585 5.870 ;
+        RECT  5.560 4.755 7.355 5.015 ;
+        RECT  6.745 5.610 7.355 5.870 ;
+        RECT  6.560 0.725 7.350 0.985 ;
+        RECT  6.485 5.610 6.745 6.140 ;
+        RECT  6.320 -0.130 6.560 0.985 ;
+        RECT  5.560 5.610 6.485 5.870 ;
+        RECT  2.700 -0.130 6.320 0.130 ;
+        RECT  2.700 0.725 6.320 0.985 ;
+        RECT  5.290 4.755 5.560 5.870 ;
+        RECT  4.990 5.610 5.290 5.870 ;
+        RECT  4.730 4.980 4.990 5.870 ;
+        RECT  3.970 5.610 4.730 5.870 ;
+        RECT  3.710 5.320 3.970 5.870 ;
+        RECT  1.820 5.610 3.710 5.870 ;
+        RECT  2.460 -0.130 2.700 0.985 ;
+        RECT  0.385 -0.130 2.460 0.130 ;
+        RECT  1.670 0.725 2.460 0.985 ;
+        RECT  1.560 5.255 1.820 5.870 ;
+        RECT  1.400 0.725 1.670 1.465 ;
+        RECT  1.400 3.180 1.670 4.390 ;
+        RECT  0.800 5.610 1.560 5.870 ;
+        RECT  0.800 4.205 1.400 4.390 ;
+        RECT  0.540 4.205 0.800 5.870 ;
+        RECT  0.385 5.490 0.540 5.870 ;
+        RECT  0.125 -0.130 0.385 0.250 ;
+        RECT  0.125 5.490 0.385 5.990 ;
+        RECT  0.000 -0.130 0.125 0.130 ;
+        RECT  0.000 5.610 0.125 5.870 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  8.895 2.740 9.020 3.000 ;
+        RECT  8.895 8.480 9.020 8.740 ;
+        RECT  8.725 2.620 8.895 3.120 ;
+        RECT  8.635 7.630 8.895 8.740 ;
+        RECT  8.635 2.620 8.725 4.025 ;
+        RECT  8.485 2.740 8.635 4.025 ;
+        RECT  7.845 8.480 8.635 8.740 ;
+        RECT  0.535 2.740 8.485 3.000 ;
+        RECT  7.585 7.860 7.845 8.740 ;
+        RECT  5.840 8.480 7.585 8.740 ;
+        RECT  5.580 7.995 5.840 8.740 ;
+        RECT  4.820 8.480 5.580 8.740 ;
+        RECT  4.560 7.615 4.820 8.740 ;
+        RECT  4.315 8.480 4.560 8.740 ;
+        RECT  4.310 7.990 4.315 8.740 ;
+        RECT  4.050 7.940 4.310 8.740 ;
+        RECT  2.980 8.480 4.050 8.740 ;
+        RECT  2.720 7.645 2.980 8.740 ;
+        RECT  1.650 8.480 2.720 8.740 ;
+        RECT  1.390 8.255 1.650 8.740 ;
+        RECT  0.385 8.480 1.390 8.740 ;
+        RECT  0.385 2.740 0.535 4.025 ;
+        RECT  0.295 2.620 0.385 4.025 ;
+        RECT  0.125 8.360 0.385 8.740 ;
+        RECT  0.125 2.620 0.295 3.120 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        RECT  0.000 8.480 0.125 8.740 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  6.895 6.970 7.505 7.230 ;
+        RECT  6.735 6.320 6.895 7.775 ;
+        RECT  5.840 6.320 6.735 6.480 ;
+        RECT  6.350 7.615 6.735 7.775 ;
+        RECT  6.435 3.375 6.695 4.095 ;
+        RECT  6.230 6.965 6.490 7.435 ;
+        RECT  4.115 3.835 6.435 4.095 ;
+        RECT  6.090 7.615 6.350 8.115 ;
+        RECT  5.160 7.275 6.230 7.435 ;
+        RECT  5.330 7.615 6.090 7.775 ;
+        RECT  5.580 6.185 5.840 6.480 ;
+        RECT  5.070 7.615 5.330 8.115 ;
+        RECT  4.900 7.015 5.160 7.435 ;
+        RECT  3.935 3.195 4.985 3.455 ;
+        RECT  3.800 7.135 4.900 7.295 ;
+        RECT  4.220 6.050 4.480 6.310 ;
+        RECT  3.460 6.050 4.220 6.210 ;
+        RECT  3.775 3.195 3.935 5.075 ;
+        RECT  3.540 7.135 3.800 8.100 ;
+        RECT  3.695 3.195 3.775 3.455 ;
+        RECT  3.065 4.915 3.775 5.075 ;
+        RECT  2.880 7.135 3.540 7.295 ;
+        RECT  3.200 6.050 3.460 6.310 ;
+        RECT  2.330 6.050 3.200 6.210 ;
+        RECT  2.585 3.835 3.145 4.095 ;
+        RECT  2.465 4.915 3.065 5.255 ;
+        RECT  2.620 6.445 2.880 7.295 ;
+        RECT  2.020 7.135 2.620 7.295 ;
+        RECT  2.325 3.205 2.585 4.095 ;
+        RECT  2.040 7.915 2.540 8.260 ;
+        RECT  1.310 4.915 2.465 5.075 ;
+        RECT  2.070 6.050 2.330 6.550 ;
+        RECT  1.050 6.050 2.070 6.210 ;
+        RECT  0.800 7.915 2.040 8.075 ;
+        RECT  1.810 7.135 2.020 7.645 ;
+        RECT  0.800 6.415 1.820 6.675 ;
+        RECT  1.760 7.145 1.810 7.645 ;
+        RECT  1.050 4.915 1.310 5.360 ;
+        RECT  0.540 6.415 0.800 8.075 ;
+    END
+END LVLLHEHX8
+
+MACRO LVLHLELX2
+    CLASS CORE ;
+    FOREIGN LVLHLELX2 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 2.050 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.870 0.470 1.950 0.760 ;
+        RECT  1.870 1.805 1.875 2.405 ;
+        RECT  1.690 0.470 1.870 2.405 ;
+        RECT  1.665 0.470 1.690 0.760 ;
+        END
+        AntennaDiffArea 0.544 ;
+    END Y
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.760 1.290 1.170 1.760 ;
+        RECT  0.755 1.600 0.760 1.760 ;
+        END
+        AntennaGateArea 0.1036 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.100 1.285 0.470 1.735 ;
+        END
+        AntennaGateArea 0.0962 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.310 -0.130 2.050 0.130 ;
+        RECT  1.050 -0.130 1.310 0.640 ;
+        RECT  0.750 -0.130 1.050 0.130 ;
+        RECT  0.150 -0.130 0.750 0.300 ;
+        RECT  0.000 -0.130 0.150 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.385 2.740 2.050 3.000 ;
+        RECT  1.125 2.280 1.385 3.000 ;
+        RECT  0.785 2.570 1.125 3.000 ;
+        RECT  0.385 2.740 0.785 3.000 ;
+        RECT  0.125 2.570 0.385 3.000 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  1.350 0.885 1.510 2.100 ;
+        RECT  0.385 0.885 1.350 1.045 ;
+        RECT  0.835 1.940 1.350 2.100 ;
+        RECT  0.575 1.940 0.835 2.270 ;
+        RECT  0.125 0.745 0.385 1.045 ;
+    END
+END LVLHLELX2
+
+MACRO LVLHLELX8
+    CLASS CORE ;
+    FOREIGN LVLHLELX8 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 4.510 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.840 0.390 3.845 0.990 ;
+        RECT  3.585 0.390 3.840 2.440 ;
+        RECT  3.580 0.640 3.585 2.440 ;
+        RECT  3.375 0.640 3.580 1.970 ;
+        RECT  2.765 0.640 3.375 0.990 ;
+        RECT  2.760 1.620 3.375 1.970 ;
+        RECT  2.505 0.390 2.765 0.990 ;
+        RECT  2.500 1.620 2.760 2.440 ;
+        END
+        AntennaDiffArea 1.2204 ;
+    END Y
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.805 1.240 1.965 1.795 ;
+        RECT  0.720 1.635 1.805 1.795 ;
+        RECT  0.405 1.245 0.720 1.795 ;
+        END
+        AntennaGateArea 0.3332 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.080 0.880 1.550 1.455 ;
+        END
+        AntennaGateArea 0.3094 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.385 -0.130 4.510 0.130 ;
+        RECT  4.125 -0.130 4.385 0.980 ;
+        RECT  3.305 -0.130 4.125 0.130 ;
+        RECT  3.045 -0.130 3.305 0.455 ;
+        RECT  2.225 -0.130 3.045 0.130 ;
+        RECT  1.965 -0.130 2.225 0.300 ;
+        RECT  0.405 -0.130 1.965 0.130 ;
+        RECT  0.145 -0.130 0.405 0.980 ;
+        RECT  0.000 -0.130 0.145 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.385 2.740 4.510 3.000 ;
+        RECT  4.125 1.755 4.385 3.000 ;
+        RECT  3.300 2.740 4.125 3.000 ;
+        RECT  3.040 2.155 3.300 3.000 ;
+        RECT  2.220 2.740 3.040 3.000 ;
+        RECT  1.620 2.570 2.220 3.000 ;
+        RECT  1.310 2.740 1.620 3.000 ;
+        RECT  1.050 2.570 1.310 3.000 ;
+        RECT  0.725 2.740 1.050 3.000 ;
+        RECT  0.125 2.570 0.725 3.000 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  2.320 1.175 2.930 1.435 ;
+        RECT  2.160 0.525 2.320 2.140 ;
+        RECT  1.075 0.525 2.160 0.685 ;
+        RECT  1.725 1.980 2.160 2.140 ;
+        RECT  1.465 1.980 1.725 2.240 ;
+        RECT  0.795 1.980 1.465 2.140 ;
+        RECT  0.535 1.980 0.795 2.240 ;
+    END
+END LVLHLELX8
+
+MACRO LVLHLEHX2
+    CLASS CORE ;
+    FOREIGN LVLHLEHX2 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 2.050 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.870 0.470 1.950 0.760 ;
+        RECT  1.870 1.805 1.875 2.405 ;
+        RECT  1.690 0.470 1.870 2.405 ;
+        RECT  1.665 0.470 1.690 0.760 ;
+        END
+        AntennaDiffArea 0.544 ;
+    END Y
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.760 1.290 1.170 1.760 ;
+        RECT  0.755 1.600 0.760 1.760 ;
+        END
+        AntennaGateArea 0.1036 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  0.100 1.285 0.470 1.735 ;
+        END
+        AntennaGateArea 0.0962 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.310 -0.130 2.050 0.130 ;
+        RECT  1.050 -0.130 1.310 0.640 ;
+        RECT  0.750 -0.130 1.050 0.130 ;
+        RECT  0.150 -0.130 0.750 0.300 ;
+        RECT  0.000 -0.130 0.150 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.385 2.740 2.050 3.000 ;
+        RECT  1.125 2.280 1.385 3.000 ;
+        RECT  0.785 2.570 1.125 3.000 ;
+        RECT  0.385 2.740 0.785 3.000 ;
+        RECT  0.125 2.570 0.385 3.000 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  1.350 0.885 1.510 2.100 ;
+        RECT  0.385 0.885 1.350 1.045 ;
+        RECT  0.835 1.940 1.350 2.100 ;
+        RECT  0.575 1.940 0.835 2.270 ;
+        RECT  0.125 0.745 0.385 1.045 ;
+    END
+END LVLHLEHX2
+
+MACRO LVLHLEHX8
+    CLASS CORE ;
+    FOREIGN LVLHLEHX8 0.000 0.000  ;
+    ORIGIN 0.000 0.000 ;
+    SIZE 4.510 BY 2.870 ;
+    SYMMETRY X Y ;
+    SITE TSM34SITE ;
+    PIN Y
+        DIRECTION OUTPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  3.840 0.390 3.845 0.990 ;
+        RECT  3.585 0.390 3.840 2.440 ;
+        RECT  3.580 0.640 3.585 2.440 ;
+        RECT  3.375 0.640 3.580 1.970 ;
+        RECT  2.765 0.640 3.375 0.990 ;
+        RECT  2.760 1.620 3.375 1.970 ;
+        RECT  2.505 0.390 2.765 0.990 ;
+        RECT  2.500 1.620 2.760 2.440 ;
+        END
+        AntennaDiffArea 1.2204 ;
+    END Y
+    PIN EN
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.805 1.240 1.965 1.795 ;
+        RECT  0.720 1.635 1.805 1.795 ;
+        RECT  0.405 1.245 0.720 1.795 ;
+        END
+        AntennaGateArea 0.3332 ;
+    END EN
+    PIN A
+        DIRECTION INPUT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  1.080 0.880 1.550 1.455 ;
+        END
+        AntennaGateArea 0.3094 ;
+    END A
+    PIN VSS
+        DIRECTION INOUT ;
+        USE GROUND ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.385 -0.130 4.510 0.130 ;
+        RECT  4.125 -0.130 4.385 0.980 ;
+        RECT  3.305 -0.130 4.125 0.130 ;
+        RECT  3.045 -0.130 3.305 0.455 ;
+        RECT  2.225 -0.130 3.045 0.130 ;
+        RECT  1.965 -0.130 2.225 0.300 ;
+        RECT  0.405 -0.130 1.965 0.130 ;
+        RECT  0.145 -0.130 0.405 0.980 ;
+        RECT  0.000 -0.130 0.145 0.130 ;
+        END
+    END VSS
+    PIN VDD
+        DIRECTION INOUT ;
+        USE POWER ;
+        SHAPE ABUTMENT ;
+        PORT
+        LAYER METAL1 ;
+        RECT  4.385 2.740 4.510 3.000 ;
+        RECT  4.125 1.755 4.385 3.000 ;
+        RECT  3.300 2.740 4.125 3.000 ;
+        RECT  3.040 2.155 3.300 3.000 ;
+        RECT  2.220 2.740 3.040 3.000 ;
+        RECT  1.620 2.570 2.220 3.000 ;
+        RECT  1.310 2.740 1.620 3.000 ;
+        RECT  1.050 2.570 1.310 3.000 ;
+        RECT  0.725 2.740 1.050 3.000 ;
+        RECT  0.125 2.570 0.725 3.000 ;
+        RECT  0.000 2.740 0.125 3.000 ;
+        END
+    END VDD
+    OBS
+        LAYER METAL1 ;
+        RECT  2.320 1.175 2.930 1.435 ;
+        RECT  2.160 0.525 2.320 2.140 ;
+        RECT  1.075 0.525 2.160 0.685 ;
+        RECT  1.725 1.980 2.160 2.140 ;
+        RECT  1.465 1.980 1.725 2.240 ;
+        RECT  0.795 1.980 1.465 2.140 ;
+        RECT  0.535 1.980 0.795 2.240 ;
+    END
+END LVLHLEHX8
+
+END LIBRARY

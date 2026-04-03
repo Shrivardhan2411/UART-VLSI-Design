@@ -1,0 +1,388 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 13.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-142):	Could not open shared library libfeoax22.so : /home/buet/cadence/EDI/tools/lib/libfeoax22.so: undefined symbol: _ZN12OpenAccess_48oaAppDef9getAppDefILj237EEEPS0_RKNS_8oaStringEjjNS_8oaDomainEiiijPKvPKNS_14oaAppObjectDefE
+
+**ERROR: (ENCOAX-142):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2013.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v13.10-p003_1 (32bit) 04/17/2013 15:43 (Linux 2.6)
+@(#)CDS: NanoRoute v13.10-p002 NR130329-0035/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+@(#)CDS: CeltIC v13.10-p007_1 (32bit) 04/10/2013 11:52:21 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 13.10-p003 (32bit) 04/17/2013 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 13.10-p009_1 (32bit) Apr 10 2013 05:45:06 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v13.10-p010
+@(#)CDS: IQRC/TQRC 12.1.0-s388 (32bit) Fri Mar 29 14:17:34 PDT 2013 (Linux 2.6.18-194.el5)
+--- Starting "Encounter v13.10-p003_1" on Thu Apr  2 22:18:00 2026 (mem=56.2M) ---
+--- Running on cadence (i686 w/Linux 2.6.32-431.3.1.el6.i686) ---
+This version was compiled on Wed Apr 17 15:43:05 PDT 2013.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_verilog /home/buet/Desktop/UART/work/uart_netlist.v
+<CMD> set init_top_cell uart_top
+<CMD> set init_lef_file {
+  /home/buet/Desktop/UART/library/tsmc13fsg_8lm_tech.lef
+  /home/buet/Desktop/UART/library/tsmc13sg_lvt.lef
+  /home/buet/Desktop/UART/library/tsmc13g_m_macros.lef
+}
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+**ERROR: (ENCOAX-820):	The OA features are disabled in the current session of Encounter because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Encounter either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (ENCOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+**ERROR: (ENCSYT-16038):	'/home/buet/Desktop/UART/library/tsmc13sg_lvt.lef' not found.
+
+Loading LEF file /home/buet/Desktop/UART/library/tsmc13fsg_8lm_tech.lef...
+
+Loading LEF file /home/buet/Desktop/UART/library/tsmc13g_m_macros.lef...
+Set DBUPerIGU to M2 pitch 820.
+**WARN: (ENCLF-200):	Pin 'B' in macro 'MXI2DXLM' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'MXI2DXLM' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'B' in macro 'MXI2DX8M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'MXI2DX8M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'B' in macro 'MXI2DX4M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'MXI2DX4M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'B' in macro 'MXI2DX2M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'MXI2DX2M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'B' in macro 'MXI2DX1M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'MXI2DX1M' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+**WARN: (ENCLF-201):	Pin 'Y' in macro 'HOLDX1M' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-201' for more detail.
+**WARN: (ENCLF-200):	Pin 'A' in macro 'ANTENNAM' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man ENCLF-200' for more detail.
+
+viaInitial starts at Thu Apr  2 22:20:50 2026
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM1 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM2 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM3 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM4 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM5 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM6 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM7 GENERATE
+**WARN: (ENCPP-557):	a single-layer VIARULE GENERATE for turn-vias is obsolete and is being ignored. You should remove this statement from your LEF file. VIARULE TURNM8 GENERATE
+viaInitial ends at Thu Apr  2 22:20:50 2026
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/buet/Desktop/UART/work/uart_netlist.v'
+Module DFFHQX1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFHQX1 is not defined in LEF files.  It will be treated as an empty module.
+Module NOR2XL not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NOR2XL is not defined in LEF files.  It will be treated as an empty module.
+Module AOI21X2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module AOI21X2 is not defined in LEF files.  It will be treated as an empty module.
+Module NOR2X1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NOR2X1 is not defined in LEF files.  It will be treated as an empty module.
+Module NOR3X1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NOR3X1 is not defined in LEF files.  It will be treated as an empty module.
+Module AND4X2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module AND4X2 is not defined in LEF files.  It will be treated as an empty module.
+Module NAND3BX1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NAND3BX1 is not defined in LEF files.  It will be treated as an empty module.
+Module AND3X2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module AND3X2 is not defined in LEF files.  It will be treated as an empty module.
+Module NAND4BXL not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NAND4BXL is not defined in LEF files.  It will be treated as an empty module.
+Module NOR4X1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NOR4X1 is not defined in LEF files.  It will be treated as an empty module.
+Module NAND4X2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NAND4X2 is not defined in LEF files.  It will be treated as an empty module.
+Module DFFTRX2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFTRX2 is not defined in LEF files.  It will be treated as an empty module.
+Module DFFTRXL not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFTRXL is not defined in LEF files.  It will be treated as an empty module.
+Module EDFFTRX1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module EDFFTRX1 is not defined in LEF files.  It will be treated as an empty module.
+Module DFFX1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFX1 is not defined in LEF files.  It will be treated as an empty module.
+Module DFFTRX1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFTRX1 is not defined in LEF files.  It will be treated as an empty module.
+Module DFFTRX4 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module DFFTRX4 is not defined in LEF files.  It will be treated as an empty module.
+Module OAI2BB2XL not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module OAI2BB2XL is not defined in LEF files.  It will be treated as an empty module.
+Module NAND2X1 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module NAND2X1 is not defined in LEF files.  It will be treated as an empty module.
+Module OR2X2 not defined.  Created automatically.
+**WARN: (ENCVL-346):	Module OR2X2 is not defined in LEF files.  It will be treated as an empty module.
+Module NOR2X2 not defined.  Created automatically.
+**WARN: (EMS-63):	Message <ENCVL-346> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+Module OAI31X1 not defined.  Created automatically.
+Module OAI32X1 not defined.  Created automatically.
+Module ADDHXL not defined.  Created automatically.
+Module OAI22XL not defined.  Created automatically.
+Module OAI2BB1XL not defined.  Created automatically.
+Module AOI21XL not defined.  Created automatically.
+Module INVXL not defined.  Created automatically.
+Module NAND2BX1 not defined.  Created automatically.
+Module INVX1 not defined.  Created automatically.
+Module XOR2X1 not defined.  Created automatically.
+Module MXI2X1 not defined.  Created automatically.
+Module NAND3X1 not defined.  Created automatically.
+Module NAND3X2 not defined.  Created automatically.
+Module SDFFHQX1 not defined.  Created automatically.
+Module SDFFTRX1 not defined.  Created automatically.
+Module DFFX4 not defined.  Created automatically.
+Module DFFX2 not defined.  Created automatically.
+Module OAI21XL not defined.  Created automatically.
+Module OAI22X1 not defined.  Created automatically.
+Module AOI211X1 not defined.  Created automatically.
+Module OAI32XL not defined.  Created automatically.
+Module AOI22XL not defined.  Created automatically.
+Module OAI33X1 not defined.  Created automatically.
+Module AND2X2 not defined.  Created automatically.
+Module OAI31XL not defined.  Created automatically.
+Module AOI21X1 not defined.  Created automatically.
+Module OAI221XL not defined.  Created automatically.
+Module AOI2BB2X1 not defined.  Created automatically.
+Module NAND2XL not defined.  Created automatically.
+Module OAI211X1 not defined.  Created automatically.
+Module NAND4X1 not defined.  Created automatically.
+Module AOI22X1 not defined.  Created automatically.
+Module MX2X1 not defined.  Created automatically.
+Module NOR2BX1 not defined.  Created automatically.
+Module AOI32X1 not defined.  Created automatically.
+
+*** Memory Usage v#7 (Current mem = 218.988M, initial mem = 56.230M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=219.0M) ***
+Set top cell to uart_top.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.55min, fe_real=2.85min, fe_mem=219.0M) ***
+
+{DETAILMESSAGE}**WARN: (ENCDB-2504):	Cell DFFHQX1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell AOI21X2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NOR2XL is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell DFFTRXL is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell DFFTRX2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NAND4X2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NOR4X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NAND4BXL is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell AND3X2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NAND3BX1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell AND4X2 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NOR3X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NOR2X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell AOI32X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NOR2BX1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell MX2X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell AOI22X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NAND4X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell OAI211X1 is instantiated in the Verilog netlist, but is not defined.
+**WARN: (ENCDB-2504):	Cell NAND2XL is instantiated in the Verilog netlist, but is not defined.
+**WARN: (EMS-63):	Message <ENCDB-2504> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message
+by using the setMessageLimit <number> command.
+The message limit can be removed by using the unsetMessageLimit command.
+Note that setting a very large number using the setMessageLimit command
+or removing the message limit using the unsetMessageLimit command can
+significantly increase the log file size.
+To suppress a message, use the suppressMessage command.
+Mark pin Q of cell DFFHQX1 output for net enb_tx in module baud_rate_generator 
+Mark pin QN of cell DFFTRX1 output for net n_5 in module baud_rate_generator 
+Mark pin Y of cell NAND2X1 output for net n_11 in module baud_rate_generator 
+Mark pin Y of cell OR2X2 output for net n_62 in module baud_rate_generator 
+Mark pin QN of cell DFFTRX2 output for net n_98 in module baud_rate_generator 
+Mark pin Q of cell DFFX1 output for net rdy in module uart_reciver 
+Mark pin QN of cell DFFX2 output for net n_7 in module uart_reciver 
+Mark pin Y of cell INVX1 output for net n_17 in module uart_reciver 
+Mark pin Y of cell AOI21X1 output for net n_27 in module uart_reciver 
+Mark pin Y of cell NAND3X1 output for net n_29 in module uart_reciver 
+Mark pin Y of cell OAI211X1 output for net n_33 in module uart_reciver 
+Mark pin Y of cell NOR4X1 output for net n_34 in module uart_reciver 
+Mark pin Y of cell NOR2X1 output for net n_36 in module uart_reciver 
+Mark pin Y of cell NAND2XL output for net n_43 in module uart_reciver 
+Mark pin Y of cell AND2X2 output for net n_64 in module uart_reciver 
+Mark pin Y of cell AOI22XL output for net n_67 in module uart_reciver 
+Mark pin Y of cell OAI2BB2XL output for net n_81 in module uart_reciver 
+Mark pin Y of cell OAI32XL output for net n_86 in module uart_reciver 
+Mark pin Y of cell OAI21XL output for net n_92 in module uart_reciver 
+Mark pin Q of cell SDFFHQX1 output for net state[1] in module transmitter 
+Mark pin Y of cell INVXL output for net n_9 in module transmitter 
+Mark pin Y of cell AOI22X1 output for net n_15 in module transmitter 
+Mark pin Y of cell NOR3X1 output for net n_16 in module transmitter 
+Mark pin Y of cell OAI22X1 output for net n_17 in module transmitter 
+Mark pin Y of cell NOR2XL output for net n_19 in module transmitter 
+Mark pin Y of cell AOI32X1 output for net n_24 in module transmitter 
+Mark pin Y of cell OAI32X1 output for net n_25 in module transmitter 
+Mark pin Y of cell OAI221XL output for net n_35 in module transmitter 
+Mark pin Y of cell AOI21XL output for net n_39 in module transmitter 
+Mark pin Y of cell MX2X1 output for net n_50 in module transmitter 
+Mark pin Y of cell NAND4X1 output for net n_57 in module transmitter 
+Mark pin Q of cell EDFFTRX1 output for net counter_rx[13] in module baud_rate_generator 
+Mark pin Q of cell DFFTRXL output for net counter_rx[10] in module baud_rate_generator.
+Mark pin Q of cell DFFTRX1 output for net counter_rx[6] in module baud_rate_generator.
+Mark pin Q of cell DFFTRX2 output for net counter_rx[1] in module baud_rate_generator.
+Mark pin Q of cell DFFTRX4 output for net counter_tx[3] in module baud_rate_generator.
+Mark pin Y of cell NAND2BX1 output for net n_0 in module baud_rate_generator 
+Mark pin Y of cell NAND3BX1 output for net n_1 in module baud_rate_generator 
+Mark pin QN of cell EDFFTRX1 output for net n_3 in module baud_rate_generator.
+Mark pin QN of cell DFFTRX4 output for net n_7 in module baud_rate_generator.
+Mark pin QN of cell DFFX1 output for net n_8 in module baud_rate_generator 
+Mark pin Y of cell MXI2X1 output for net n_18 in module baud_rate_generator.
+Mark pin Y of cell XOR2X1 output for net n_19 in module baud_rate_generator.
+Mark pin Y of cell NOR2X2 output for net n_21 in module baud_rate_generator.
+Mark pin Y of cell OAI2BB1XL output for net n_50 in module baud_rate_generator 
+Mark pin Y of cell OAI22XL output for net n_51 in module baud_rate_generator 
+Mark pin CO of cell ADDHXL output for net n_54 in module baud_rate_generator 
+Mark pin S of cell ADDHXL output for net n_55 in module baud_rate_generator 
+Mark pin Y of cell OAI31X1 output for net n_59 in module baud_rate_generator 
+Mark pin Y of cell NAND4BXL output for net n_70 in module baud_rate_generator 
+Mark pin Y of cell AND3X2 output for net n_74 in module baud_rate_generator.
+Mark pin Y of cell AND4X2 output for net n_76 in module baud_rate_generator.
+Mark pin Y of cell NAND4X2 output for net n_89 in module baud_rate_generator 
+Mark pin Y of cell AOI21X2 output for net n_91 in module baud_rate_generator.
+Mark pin Y of cell NAND3X2 output for net n_103 in module baud_rate_generator 
+Mark pin SE of cell SDFFTRX1 output for net sample[1] in module uart_reciver.
+Mark pin Q of cell DFFX2 output for net state[1] in module uart_reciver 
+Mark pin Q of cell DFFX4 output for net state[0] in module uart_reciver.
+Mark pin QN of cell DFFX4 output for net n_8 in module uart_reciver 
+Mark pin Y of cell AOI2BB2X1 output for net n_59 in module uart_reciver 
+Mark pin Y of cell OAI31XL output for net n_63 in module uart_reciver 
+Mark pin Y of cell OAI33X1 output for net n_66 in module uart_reciver 
+Mark pin Y of cell AOI211X1 output for net n_87 in module uart_reciver 
+Mark pin Y of cell NOR2BX1 output for net n_10 in module transmitter 
+Found empty module (DFFHQX1).
+Found empty module (AOI21X2).
+Found empty module (NOR2XL).
+Found empty module (DFFTRXL).
+Found empty module (DFFTRX2).
+Found empty module (NAND4X2).
+Found empty module (NOR4X1).
+Found empty module (NAND4BXL).
+Found empty module (AND3X2).
+Found empty module (NAND3BX1).
+Found empty module (AND4X2).
+Found empty module (NOR3X1).
+Found empty module (NOR2X1).
+Found empty module (AOI32X1).
+Found empty module (NOR2BX1).
+Found empty module (MX2X1).
+Found empty module (AOI22X1).
+Found empty module (NAND4X1).
+Found empty module (OAI211X1).
+Found empty module (NAND2XL).
+Found empty module (AOI2BB2X1).
+Found empty module (OAI221XL).
+Found empty module (AOI21X1).
+Found empty module (OAI31XL).
+Found empty module (AND2X2).
+Found empty module (OAI33X1).
+Found empty module (AOI22XL).
+Found empty module (OAI32XL).
+Found empty module (AOI211X1).
+Found empty module (OAI22X1).
+Found empty module (OAI21XL).
+Found empty module (DFFX2).
+Found empty module (DFFX4).
+Found empty module (SDFFTRX1).
+Found empty module (SDFFHQX1).
+Found empty module (NAND3X2).
+Found empty module (NAND3X1).
+Found empty module (MXI2X1).
+Found empty module (XOR2X1).
+Found empty module (INVX1).
+Found empty module (NAND2BX1).
+Found empty module (INVXL).
+Found empty module (AOI21XL).
+Found empty module (OAI2BB1XL).
+Found empty module (OAI22XL).
+Found empty module (ADDHXL).
+Found empty module (OAI32X1).
+Found empty module (OAI31X1).
+Found empty module (NOR2X2).
+Found empty module (OR2X2).
+Found empty module (NAND2X1).
+Found empty module (OAI2BB2XL).
+Found empty module (DFFTRX4).
+Found empty module (DFFTRX1).
+Found empty module (DFFX1).
+Found empty module (EDFFTRX1).
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 56 cells.
+Building hierarchical netlist for Cell uart_top ...
+*** Netlist is unique.
+** info: there are 692 modules.
+** info: there are 0 stdCell insts.
+
+*** Memory Usage v#7 (Current mem = 221.254M, initial mem = 56.230M) ***
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+
+**WARN: (ENCSYT-7328):	Active setup and hold analysis views were not provided by the -setup and -hold arguments to initDesign. The system requires at least one active setup and hold analysis view to be declared before any timing commands can be run. If you need to run timing commands, you can add the -setup and -hold options to your init_design invocation.  You can use the all_analysis_view command to identify the currently available views.
+<CMD> windowSelect 0.012 0.209 0.010 0.194
+<CMD> selectObject IO_Pin rst
+<CMD> deselectAll
+<CMD> selectObject IO_Pin rdy
+<CMD> deselectAll
+<CMD> selectObject IO_Pin rdy
+<CMD> deselectAll
+<CMD> selectObject IO_Pin rdy
+<CMD> deselectAll
+<CMD> panCenter -0.012 0.042
+<CMD> panCenter -0.050 -0.004
+<CMD> windowSelect -0.125 0.045 -0.158 -0.045
+<CMD> windowSelect -0.146 0.095 -0.057 -0.053
+<CMD> selectObject IO_Pin rst
+<CMD> deselectAll
+**INFO (INTERRUPT): One more Ctrl-C to exit Encounter ...
+<CMD> set init_verilog /home/buet/Desktop/UART/work/uart_netlist.v
+<CMD> set init_top_cell uart_top
+<CMD> set init_lef_file {
+  /home/buet/Desktop/UART/library/tsmc13g_m_macros.lef
+  /home/buet/Desktop/UART/library/tsmc13fsg_8lm_tech.lef
+}
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> init_design
+**WARN: (ENCSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+
+*** Memory Usage v#7 (Current mem = 225.652M, initial mem = 56.230M) ***
+--- Ending "Encounter" (totcpu=0:02:34, real=0:13:20, mem=225.7M) ---

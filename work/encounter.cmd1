@@ -1,0 +1,52 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Thu Apr  2 22:18:01 2026                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v13.10-p003_1 (32bit) 04/17/2013 15:43 (Linux 2.6)
+#@(#)CDS: NanoRoute v13.10-p002 NR130329-0035/13_10-UB (database version 2.30, 190.4.1) {superthreading v1.19}
+#@(#)CDS: CeltIC v13.10-p007_1 (32bit) 04/10/2013 11:52:21 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 13.10-p003 (32bit) 04/17/2013 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 13.10-p009_1 (32bit) Apr 10 2013 05:45:06 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v13.10-p010
+#@(#)CDS: IQRC/TQRC 12.1.0-s388 (32bit) Fri Mar 29 14:17:34 PDT 2013 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_verilog /home/buet/Desktop/UART/work/uart_netlist.v
+set init_top_cell uart_top
+set init_lef_file {
+  /home/buet/Desktop/UART/library/tsmc13fsg_8lm_tech.lef
+  /home/buet/Desktop/UART/library/tsmc13sg_lvt.lef
+  /home/buet/Desktop/UART/library/tsmc13g_m_macros.lef
+}
+set init_pwr_net VDD
+set init_gnd_net VSS
+init_design
+windowSelect 0.012 0.209 0.010 0.194
+selectObject IO_Pin rst
+deselectAll
+selectObject IO_Pin rdy
+deselectAll
+selectObject IO_Pin rdy
+deselectAll
+selectObject IO_Pin rdy
+deselectAll
+panCenter -0.012 0.042
+panCenter -0.050 -0.004
+windowSelect -0.125 0.045 -0.158 -0.045
+windowSelect -0.146 0.095 -0.057 -0.053
+selectObject IO_Pin rst
+deselectAll
+set init_verilog /home/buet/Desktop/UART/work/uart_netlist.v
+set init_top_cell uart_top
+set init_lef_file {
+  /home/buet/Desktop/UART/library/tsmc13g_m_macros.lef
+  /home/buet/Desktop/UART/library/tsmc13fsg_8lm_tech.lef
+}
+set init_pwr_net VDD
+set init_gnd_net VSS
+init_design
